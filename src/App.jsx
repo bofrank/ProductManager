@@ -1,4 +1,4 @@
-import ProjectForm from "./components/NewProject";
+import NewProject from "./components/NewProject";
 import ProjectsSidebar from "./components/ProjectsSidebar";
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <>
       <main className="h-screen my-8 flex gap-8">
         <ProjectsSidebar />
+        <NewProject visibility="visible" />
         <div>
           <p className="flex flex-col gap-1 my-4">
             No Project Selected
@@ -18,9 +19,6 @@ function App() {
           </button>
         </div>
       </main>
-      <div>
-        <ProjectForm visibility="visible" />
-      </div>
     </>
   );
 }
