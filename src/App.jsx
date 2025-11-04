@@ -1,4 +1,4 @@
-import ProjectForm from "./components/ProjectForm";
+import ProjectForm from "./components/NewProject";
 import ProjectsSidebar from "./components/ProjectsSidebar";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         </div>
       </main>
       <div>
-        <ProjectForm visibility="invisible" />
+        <ProjectForm visibility="visible" />
       </div>
     </>
   );
