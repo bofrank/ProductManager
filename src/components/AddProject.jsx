@@ -4,6 +4,7 @@ export default function AddProject(){
 
     function addProject(){
         console.log("hello");
+        ProjectFrom.visibility='visible';
     }
 
     return (
