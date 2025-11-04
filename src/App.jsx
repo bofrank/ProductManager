@@ -4,7 +4,7 @@ import ProjectsSidebar from "./components/ProjectsSidebar";
 import NoProjectSelected from "./components/NoProjectSelected"
 
 function App() {
-  const [projectState, setProjectState] = useState({
+  const [projectsState, setProjectState] = useState({
     selectedProjectId: undefined,
     projects: []
   });
@@ -18,11 +18,19 @@ function App() {
     });
   }
 
+  let content;
+
+  if(projectsState.selectedProjectId === null){
+    content = <NewProject />
+  } else if (projectsState.selectedProjectId === undefined){
+    content = <NoProjectSelected onStartAddProject={handleStartAddProject} />
+  }
+
   return (
     <>
       <main className="h-screen my-8 flex gap-8">
         <ProjectsSidebar onStartAddProject={handleStartAddProject} />
-        <NoProjectSelected onStartAddProject={handleStartAddProject} />
+        {content}
       </main>
     </>
   );
