@@ -14,7 +14,7 @@ function App() {
   });
 
   function handleAddTask(text){
-    setProjectsState( prevState => {
+    setProjectsState( (prevState) => {
       const taskId = Math.random();
       const newTask = {
         text, 
@@ -29,8 +29,15 @@ function App() {
     })
   }
 
-  function handleDeleteTask(){
-    //will add code here
+  function handleDeleteTask(id){
+   setProjectsState((prevState) => {
+      return {
+        ...prevState,
+        tasks: prevState.tasks.filter(
+          (task) => task.id !== id
+        ),
+      };
+    });
   }
 
   function handleSelectProject(id){
