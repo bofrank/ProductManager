@@ -4,13 +4,13 @@ import ProjectsSidebar from "./components/ProjectsSidebar";
 import NoProjectSelected from "./components/NoProjectSelected"
 
 function App() {
-  const [projectsState, setProjectState] = useState({
+  const [projectsState, setProjectsState] = useState({
     selectedProjectId: undefined,
     projects: []
   });
 
   function handleStartAddProject(){
-    setProjectState(prevState => {
+    setProjectsState(prevState => {
       return {
         ...prevState,
         selectedProjectId: null
