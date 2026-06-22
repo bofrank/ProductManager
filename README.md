@@ -40,12 +40,18 @@ The app will open at `http://localhost:3000`
 
 ### Usage
 
-[Add instructions on how to use the app here]
+1. **Creating a Product**: Click the "New Product" button and fill in the product details including name, description, and category.
+
+2. **Managing Features**: Navigate to a product and click "Add Feature" to create new features. You can set priorities, deadlines, and track progress.
+
+3. **Organizing Tasks**: Break down features into tasks. Assign tasks to team members, set due dates, and update status as work progresses.
+
+4. **Tracking Roadmap**: View the product roadmap to see planned features and their timelines. Filter by status, priority, or team member.
+
+5. **Real-time Updates**: Changes made by team members appear instantly across all connected clients.
+
+6. **Collaboration**: Leave comments on tasks and features to discuss implementation details with your team.
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for bugs and feature requests.
-
-## License
-
-[Add license information if applicable]
